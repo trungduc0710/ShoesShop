@@ -201,7 +201,7 @@ function clearMessage(obj) {
 //   );
 // }
 async function getDataAddress() {
-  let dataAddress = await fetch(`/local.json`).then((response) =>
+  let dataAddress = await fetch(`./local.json`).then((response) =>
     response.json().catch((error) => {
       alert(`Lỗi khi gọi dữ liệu: ${error}`);
     })
