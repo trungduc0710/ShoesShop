@@ -6,7 +6,32 @@
     <title>ShoesShop</title>
   </head>
   <body>
-    <h1>CHÀO MỪNG ĐẾN VỚI SHOESHOP</h1>
-    <a src="./home-page/home.html">Enter</a>
+    <style>
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        color: rgb(27, 124, 209);
+      }
+      .linkHome {
+        padding: 10px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        background: rgb(27, 124, 209);
+        color: white;
+      }
+      .linkHome:hover {
+        background: rgba(27, 124, 209, 0.575);
+      }
+    </style>
+    <div class="main">
+      <h1 class="title">CHÀO MỪNG ĐẾN VỚI SHOESHOP</h1>
+      <h2>
+        <a href="./home-page/home.html" class="linkHome">Enter the website</a>
+      </h2>
+    </div>
   </body>
 </html>
