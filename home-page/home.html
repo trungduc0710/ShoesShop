@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men's Shoes</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="navigation">
+      <div class="nav-bar">
+        <a class="anchor-home" href="./home.html">
+          <img
+            src="../images/nike_logo.jpg"
+            alt="Nike logo"
+            class="nike_logo"
+          />
+          <span class="logo_name">Nike</span>
+        </a>
+        <nav class="nav-bar__nav">
+          <a href="./home.html" class="nav current-page" target="_self">home</a>
+          <a href="./home.html" class="nav" target="_self">about</a>
+          <a href="../bill-page/bill.html" class="nav" target="_self">bills</a>
+          <a href="../cart-page/cart.html" class="nav nav-cart" target="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart__products-count"></span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <section class="showItems">
+      <main class="main"></main>
+    </section>
+
+    <script src="../global.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>

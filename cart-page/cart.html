@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men's Shoes</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="navigation">
+      <div class="nav-bar">
+        <a class="anchor-home" href="./home.html">
+          <img
+            src="../images/nike_logo.jpg"
+            alt="Nike logo"
+            class="nike_logo"
+          />
+          <span class="logo_name">Nike</span>
+        </a>
+        <nav class="nav-bar__nav">
+          <a href="../home-page/home.html" class="nav" target="_self">home</a>
+          <a href="../home-page/home.html" class="nav" target="_self">about</a>
+          <a href="../bill-page/bill.html" class="nav" target="_self"
+            >bills</a
+          >
+          <a href="../cart-page/cart.html" class="nav nav-cart current-page" target="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart__products-count"></span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <section class="cart-empty hidden">
+        <div class="cart-empty-img"></div>
+        <div class="cD_table-footer">
+            <a href="../home-page/home.html">
+                <button class="btn-backToShopping btn">Back to Shopping</button>
+            </a>
+          </div>
+    </section>
+    <section class="cartDetails">
+      <div class="cartDetails_table">
+        <div class="cD_table-titles cD_table-grid">
+          <span class="cD_table-title">Product Name</span>
+          <span class="cD_table-title">Quantity</span>
+          <span class="cD_table-title">Subtotal</span>
+          <span class="cD_table-title">Total</span>
+          <span class="cD_table-title">Clear Cart</span>
+        </div>
+        <div class="cD_table-contents">
+          
+        </div>
+        <div class="cD_table-total">Total: $4,000</div>
+        </div>
+        <div class="cD_table-footer">
+            <a href="../home-page/home.html">
+                <button class="btn-backToShopping btn">Back to Shopping</button>
+            </a>
+            <button class="btn-buy btn">Buy</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="dialog-info-customer hidden">
+      <form action="" class="info-customer">
+        <h2 class="info-customer_title">
+          Thông tin người mua
+        </h2>
+        <button type="button" class="info-customer--close btn">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <div class="ic-fullname">
+          <label for="" class="label-required">Họ và tên</label>
+          <div class="ic-lastname ic-input_group">
+            <input type="text" class="input input-required input-ic" placeholder="Họ">
+            <p class="ic-alert hidden">Không được để trống</p>
+          </div>
+          <div class="ic-firstname ic-input_group">
+            <!-- <label for="" class="label-required">Tên</label> -->
+            <input type="text" class="input input-required input-ic" placeholder="Tên">
+            <p class="ic-alert hidden">Không được để trống</p>
+          </div>
+        </div>
+        <div class="ic-email ic-input_group">
+          <label for="" class="label-required">Email</label>
+          <input type="email" class="input input-required input-ic input-email" placeholder="Email">
+          <p class="ic-alert hidden">Không được để trống</p>
+        </div>
+        <div class="ic-fnumber ic-input_group">
+          <label for="" class="label-required">Số điện thoại</label>
+          <input type="tel" class="input input-required input-ic input-phone" placeholder="Số điện thoại (84 xxx xxx xxx hoặc 0xxx xxx xxx)">
+          <p class="ic-alert hidden">Không được để trống</p>
+        </div>
+        <div class="ic-address">
+          <label for="" class="label-required">Địa chỉ</label>
+          <div class="ic-province ic-input_group">
+            <select name="" id="" class="ic-select ic-select_provice" onchange="getDistricts(event)">
+              <option value="">
+                -- Chọn Tỉnh/Thành phố --
+              </option>
+            </select>
+            <p class="ic-alert hidden">Không được để trống</p>
+          </div>
+          <div class="ic-district ic-input_group">
+            <select name="" id="" class="ic-select ic-select_district" onchange="getWards(event)">
+              <option value="">
+                -- Chọn Huyện/Quận --
+              </option>
+            </select>
+            <p class="ic-alert hidden">Không được để trống</p>
+          </div>
+          <div class="ic-ward ic-input_group">
+            <select name="" id="" class="ic-select ic-select_ward">
+              <option value="">
+                -- Chọn Xã/Phường --
+              </option>
+            </select>
+            <p class="ic-alert hidden">Không được để trống</p>
+          </div>
+        </div>
+        <div class="ic-house-number">
+          <input type="text" class="input input-required input-ic" placeholder="Số nhà">
+          <p class="ic-alert hidden">Không được để trống</p>
+        </div>
+        <div class="ic-message ic-input_group">
+          <label for="" class="">Lời nhắn</label>
+          <textarea name="" id="" cols="" rows="" class="textarea-input input-ic" ></textarea>
+        </div>
+        <div class="ic-footer">
+          <button class="btn-cancel btn">Hủy</button>
+          <button class="btn-confirm btn">Xác nhận</button>
+        </div>
+      </form>
+    </section>
+    <!-- <script type="module" src="home.js"></script> -->
+    <!-- <script type="module" src="../global.js"></script> -->
+    <script src="../global.js"></script>
+    <script src="./cart.js"></script>
+  </body>
+</html>

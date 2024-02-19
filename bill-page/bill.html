@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Men's Shoes</title>
+    <link rel="stylesheet" href="bill.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="navigation">
+      <div class="nav-bar">
+        <a class="anchor-home" href="./home.html">
+          <img
+            src="../images/nike_logo.jpg"
+            alt="Nike logo"
+            class="nike_logo"
+          />
+          <span class="logo_name">Nike</span>
+        </a>
+        <nav class="nav-bar__nav">
+          <a href="../home-page/home.html" class="nav" target="_self">home</a>
+          <a href="../home-page/home.html" class="nav" target="_self">about</a>
+          <a
+            href="../bill-page/bill.html"
+            class="nav current-page"
+            target="_self"
+            >bills</a
+          >
+          <a href="../cart-page/cart.html" class="nav nav-cart" target="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart__products-count"></span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <!-- content -->
+    <section class="main">
+      <div class="main__bill">
+        <div class="main__bill-noempty">
+          <div class="bill__product-title">
+            <div>Code</div>
+            <div>Customer Name</div>
+            <div>Date</div>
+            <div>Item Numbers</div>
+            <div>Toltal Quantity</div>
+            <div>Toltal Price</div>
+            <div>Return</div>
+          </div>
+          <div class="bill__product-list"></div>
+        </div>
+      </div>
+      <div class="main__back">
+        <a href="../home-page/home.html" class="bill__back" target="_self">
+          <i class="fa-solid fa-arrow-left icon__back"></i>
+          <span> Back to Shopping</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- <div id="toast"></div> -->
+
+    <script src="../global.js"></script>
+    <script src="./bill.js"></script>
+  </body>
+</html>
