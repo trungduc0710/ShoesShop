@@ -79,7 +79,7 @@ function listItemInBill(order) {
                           getItemInfo(item.id).name
                         }</strong></span>
                         <span class="quantityPro">Quantity: ${
-                          getItemInfo(item.id).quantity
+                          item.quantity
                         }</span>
                     </div>
                 </div>
